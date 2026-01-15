@@ -43,10 +43,13 @@ The <m>(i,j)</m> entry of the matrix is the pair <m>(a,b)</m>, called the \texti
 
 
 
-<question> For each of the following, create the Game Matrix for the following game. Take a guess at what a good strategy might be. Justify your answer.
+<question>
+<p>
+ For each of the following, create the Game Matrix for the following game. Take a guess at what a good strategy might be. Justify your answer.
 
-</question><ol>
-
+</p>
+</question>
+<ol>
 <li><term>Matching Pennies</term>:
 In the game of Matching Pennies, each player has a penny which they will reveal simultaneously. That is, each player two choices: Heads (H) or Tails (T). If they choose the same letter, then Rose wins <m>1</m> dollar from Colin. If they don't match, then Rose pays <m>1</m> dollar to Colin.
 </li>
@@ -66,9 +69,12 @@ A <term>pure strategy</term> for a player means that the player ALWAYS makes the
 
 <p>Note that when a game is played only once, we must always choose a pure strategy (we play the game once, so we have only one opportunity to select a choice). </p>
 
-<question> For each of the following games, try to decide a ``best'' pure strategy for each player. Discuss and justify your answers.
-
-</question><ol>
+<question>
+<p>
+ For each of the following games, try to decide a ``best'' pure strategy for each player. Discuss and justify your answers.
+</p>
+</question>
+<ol>
   <li> <tabular halign="center">
       <row bottom="minor">
           <cell right="minor"> </cell>
@@ -127,9 +133,13 @@ A strategy of row (or column) <m>i</m> dominates a strategy of column <m>i'</m> 
 A strategy of row (or column) <m>i</m> dominates a strategy of column <m>i'</m> if every entry if row (or column) <m>i'</m> is strictly less than the corresponding entry in row (or column) <m>i</m>. 
 </definition>
 
-<question> If strategy <m>i</m> dominates strategy <m>i'</m>, will a rational player  choose strategy <m>i'</m>? 
+<question>
+<p>
+ If strategy <m>i</m> dominates strategy <m>i'</m>, will a rational player  choose strategy <m>i'</m>? 
 Use your answer to reduce the following game into as simple a form as possible or justify why we cannot reduce the game further. (Remove dominated rows and columns whenever you see them.)
+</p>
 </question>
+
 
 <p>Imagine a voting model where there are exactly <m>7</m> political views, linearly ordered <m>1,2,\dots,7</m> with <m>1</m> being the most liberal and <m>7</m> being the most conservative. Suppose that two candidates are running for office and must choose to adopt <m>1</m> of the <m>7</m> views. Each candidate wants to maximize their favorability ratings, and the following Game Matrix shows how their ratings change for each scenario:
 </p>

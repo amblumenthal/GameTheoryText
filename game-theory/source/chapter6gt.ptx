@@ -13,9 +13,13 @@ The <m>(i,j)</m> entry of the matrix is the payout for Rose. (Note then that the
 
 
 
-<question> For each of the following zero-sum games, find all equilibrium pairs. If you are unable to find equilibrium pairs, explain the issue you ran into. Justify your answers.
+<question>
+<p>
+ For each of the following zero-sum games, find all equilibrium pairs. If you are unable to find equilibrium pairs, explain the issue you ran into. Justify your answers.
 
-</question><ol>
+</p>
+</question>
+
 
 <question> 
   <tabular halign="center">
@@ -96,16 +100,20 @@ The <m>(i,j)</m> entry of the matrix is the payout for Rose. (Note then that the
       </row>
   </tabular>
 </question>
-</ol>
+
 
 
 
 
 <p>We now develop another way to find a ``good'' strategy which does not rely on dominating strategies. We think of this new strategy as ``extremely defensive play.''</p>
 
-<question> Imagine you are playing the following game. You know that your opponent CAN read your mind, but you can't read theirs. What should you do if you are Rose? What should you do if you are Colin? Why?
+<question>
+<p>
+ Imagine you are playing the following game. You know that your opponent CAN read your mind, but you can't read theirs. What should you do if you are Rose? What should you do if you are Colin? Why?
 
+</p>
 </question>
+
   <tabular halign="center">
   <row bottom="minor">
           <cell right="minor"> </cell>
@@ -149,13 +157,21 @@ The <m>(i,j)</m> entry of the matrix is the payout for Rose. (Note then that the
 
 
 
-<question> Try the method built in the previous problem on the other games on this pre-class. What do you notice about the strategies each player ends up choosing? 
+<question>
+<p>
+ Try the method built in the previous problem on the other games on this pre-class. What do you notice about the strategies each player ends up choosing? 
 
-</question> 
-
-<question> How does the strategy developed above work in the following game? If both players start the game using this strategy, would either player be better served to change strategy? If Colin guesses that Rose might change, would Colin be at an advantage to switch?
-
+</p>
 </question>
+ 
+
+<question>
+<p>
+ How does the strategy developed above work in the following game? If both players start the game using this strategy, would either player be better served to change strategy? If Colin guesses that Rose might change, would Colin be at an advantage to switch?
+
+</p>
+</question>
+
 
 <p>    <tabular halign="center">
       <row bottom="minor">
@@ -197,12 +213,17 @@ The <m>(i,j)</m> entry of the matrix is the payout for Rose. (Note then that the
 </p>
 
 
-<question> Prove the following: 
+<question>
+<p>
+ Prove the following: 
+</p>
 <claim>
 Let <m>A</m> be a zero-sum game matrix. If iterated deletion of dominated strategies reduces <m>A</m> to a <m>1 \times 1</m> matrix consisting of the entry in position <m>(i,j)</m> of the original matrix, then the <m>(i,j)</m> entry of <m>A</m> is an equilibrium point.
 </claim>
-(Hint: Show that a removed row can't have been a better option for Rose and a removed Column can't have been a better option for Colin.)
+<p>(Hint: Show that a removed row can't have been a better option for Rose and a removed Column can't have been a better option for Colin.)
+</p>
 </question>
+
 
 
 
@@ -221,8 +242,12 @@ The <term>expected value</term> of a game of chance is the average net gain or l
 
 <p>We now turn our attention to mixed strategies, but need to build tools to deal with them first. Recall that a mixed strategy can be written as follows: <m>[(r_1,r_2,\dots,r_m),(c_1,c_2,\dots,c_m)]</m> where <m>r_i</m> is the probability that Rose selects row <m>i</m> and <m>c_j</m> is the probability that Colin selects column <m>j</m>. </p>
 
-<question> Consider the following zero sum game matrix:
+<question>
+<p>
+ Consider the following zero sum game matrix:
+</p>
 </question>
+
   <tabular halign="center">
       <row bottom="minor"> 
           <cell right="minor"> </cell>
@@ -256,13 +281,20 @@ The <term>expected value</term> of a game of chance is the average net gain or l
   </statement>
 </definition>
 
-<question> Play some games of One-card Stud's Poker (be sure to play some games as each player). Conjecture a best strategy for each player.
+<question>
+<p>
+ Play some games of One-card Stud's Poker (be sure to play some games as each player). Conjecture a best strategy for each player.
 
+</p>
 </question>
 
 
-<question> Determine the payoff for the following strategies: 
+
+<question>
+<p>
+ Determine the payoff for the following strategies: 
 Note that some of these outcomes depend on chance... in this case, find the expected payout for each player!
+</p>
 <ol>
   <li> <m>[Bet, Fold]</m>  </li>
   <li> <m>[Fold, Bet]</m>  </li>
@@ -273,11 +305,19 @@ Note that some of these outcomes depend on chance... in this case, find the expe
 
 
 
-<question> Use the answers from above to create the game matrix for One-Card Stud Poker (using expected payout values where appropriate). Use methods from class to try to determine a best strategy for One-Card Stud Poker.
+<question>
+<p>
+ Use the answers from above to create the game matrix for One-Card Stud Poker (using expected payout values where appropriate). Use methods from class to try to determine a best strategy for One-Card Stud Poker.
+</p>
 </question>
 
-<question> We return to a game with no equilibrium.
+
+<question>
+<p>
+ We return to a game with no equilibrium.
+</p>
 </question>
+
   <md>
   <mrow>\begin{bmatrix} 1 \amp 0 </mrow>
   <mrow> -1 \amp 2 \end{bmatrix}</mrow>
@@ -293,13 +333,15 @@ Note that some of these outcomes depend on chance... in this case, find the expe
 
 <p> We want to expand on the meaning of graphical representations of strategy developed last class. 
 After determining Rose's potential strategies for the game matrix
-
+</p>
   <md>
   <mrow> \begin{bmatrix} 1 \amp 0 </mrow>
   <mrow> -1 \amp 2 \end{bmatrix} </mrow>
   </md>
 
-we arrived at the following plot for Rose:</p>
+<p>
+  we arrived at the following plot for Rose:
+</p>
 
   <latex-image>
 \begin{tikzpicture}
@@ -353,8 +395,12 @@ we arrived at the following plot for Rose:</p>
 
 
 
-<question> Build Colin's plot (like Rose's above) for the zero sum game:
+<question>
+<p>
+ Build Colin's plot (like Rose's above) for the zero sum game:
+</p>
 </question>
+
   <md>
   <mrow>\begin{bmatrix}1 \amp 0 </mrow>
   <mrow>-1 \amp 2\end{bmatrix}</mrow>
@@ -366,10 +412,14 @@ we arrived at the following plot for Rose:</p>
 
 
 
-<question> Consider the following zero sum game matrix:
+<question>
+<p>
+ Consider the following zero sum game matrix:
+</p>
 </question>
+
   <md>
-  <mrow>\begin{bmatrix> 4 \amp -2 \amp -1 </mrow>
+  <mrow>\begin{bmatrix} 4 \amp -2 \amp -1 </mrow>
   <mrow>-1 \amp 3 \amp 1\end{bmatrix}</mrow>
   </md>
 
@@ -387,8 +437,12 @@ Let <m>\textbf{p}</m> be a strategy for Rose. The <term>guarantee</term> of <m>\
 <theorem>[Von Neumann's Minimax Theorem]
 Every zero sum matrix game <m>A</m> has a unique number <m>v</m>, called the value of <m>A</m> which is the maximum guarantee of a mixed strategy for Rose and the minimum guarantee of a mixed strategy for Colin.
 </theorem>
-<question> Consider the following zero sum game matrix:
+<question>
+<p>
+ Consider the following zero sum game matrix:
+</p>
 </question>
+
   <md>
   <mrow>\begin{bmatrix} 2 \amp -1 </mrow>
   <mrow>1 \amp 2 \end{bmatrix}</mrow>
@@ -459,10 +513,14 @@ Solving systems of equations will be the key to victory! </p>
 
 
 
-<question> Find the strategy for Colin that equates Rose's results. What is the expected value of the strategy? How does it compare to Rose's expected value?
+<question>
+<p>
+ Find the strategy for Colin that equates Rose's results. What is the expected value of the strategy? How does it compare to Rose's expected value?
 
 
-</question><definition>[Von Neumann Solution]
+</p>
+</question>
+<definition>[Von Neumann Solution]
 Let <m>A</m> be a zero sum game with mixed strategies for Rose and Colin <m>\textbf{p}</m>  and <m>\textbf{q}</m> respectively which both have a guarantee of <m>v</m>. The triple, <m>v, \textbf{p},</m> and <m>\textbf{q}</m> are called a \textit{von Neumann Solution}. 
 </definition>
 
@@ -474,13 +532,21 @@ The following result provides a satisfying conclusion:
 Every zero sum matrix game <m>A</m> has a unique number <m>v</m>, called the value of <m>A</m> which is the maximum guarantee of a mixed strategy for Rose and the minimum guarantee of a mixed strategy for Colin.
 </theorem>
 
-<question> Interpret von Neumann's Minimax Theorem. What does it mean for classical games? Why would it be called the Minimax Theorem?
+<question>
+<p>
+ Interpret von Neumann's Minimax Theorem. What does it mean for classical games? Why would it be called the Minimax Theorem?
 
+</p>
 </question>
 
-<question> Imagine that Rose and Colin are playing tennis at a high level. Analytics have been done to determine the odds of Rose winning a given point based on the following scenarios. Rose can either hit to Colin's forehand (F) or backhand side (B), and since the ball is moving so quickly, Colin must guess which side, forehand (F) or backhand (B) that Rose will hit to. If Colin guesses wrong, he will not get his racket as solidly on the ball. The data analysts have determined that if both play F, Rose has an <m>20\%</m> chance of winning the point, if the both play B Rose has a <m>50\%</m> chance of winning the point. If Rose plays F and Colin guesses B, she has a <m>80\%</m> chance of winning, and if Rose plays B and Colin guesses F she has a <m>90\%</m> chance of winning.
 
-</question><ol>
+<question>
+<p>
+ Imagine that Rose and Colin are playing tennis at a high level. Analytics have been done to determine the odds of Rose winning a given point based on the following scenarios. Rose can either hit to Colin's forehand (F) or backhand side (B), and since the ball is moving so quickly, Colin must guess which side, forehand (F) or backhand (B) that Rose will hit to. If Colin guesses wrong, he will not get his racket as solidly on the ball. The data analysts have determined that if both play F, Rose has an <m>20\%</m> chance of winning the point, if the both play B Rose has a <m>50\%</m> chance of winning the point. If Rose plays F and Colin guesses B, she has a <m>80\%</m> chance of winning, and if Rose plays B and Colin guesses F she has a <m>90\%</m> chance of winning.
+
+</p>
+</question>
+<ol>
   <li> Convert this information into a game matrix.  </li>
   <li> Find a strategy for Rose that equates Colin's Results. </li>
   <li> Find a strategy for Colin that equates Rose's Results. </li>
@@ -489,8 +555,12 @@ Every zero sum matrix game <m>A</m> has a unique number <m>v</m>, called the val
 
 
 
-<question> We now revisit a matrix that we drew a payoff plot for. The payoff plot showed visually where an optimal strategy might lie, but now we have to tools to algebraically nail down optimal strategies for both players. We determined that the best guarantee for Rose was with strategy <m>[\frac{2}{7}, \frac{5}{7}]</m>.
-</question><md>
+<question>
+<p>
+ We now revisit a matrix that we drew a payoff plot for. The payoff plot showed visually where an optimal strategy might lie, but now we have to tools to algebraically nail down optimal strategies for both players. We determined that the best guarantee for Rose was with strategy <m>[\frac{2}{7}, \frac{5}{7}]</m>.
+</p>
+</question>
+<md>
 <mrow>\begin{bmatrix} 4 \amp -2 \amp -1 </mrow>
 <mrow>-1 \amp 3 \amp 1 \end{bmatrix} </mrow>
 </md>
@@ -502,10 +572,14 @@ Every zero sum matrix game <m>A</m> has a unique number <m>v</m>, called the val
 </ol>
 
 
-<question> Generalize the procedure of the previous problem. Give instructions on how to find a von Neumann solution in any <m>n \times 2</m> zero sum matrix game.
+<question>
+<p>
+ Generalize the procedure of the previous problem. Give instructions on how to find a von Neumann solution in any <m>n \times 2</m> zero sum matrix game.
 
 
+</p>
 </question>
+
 <definition>
   <statement>
       <term>Undercut</term> is a two player game between Rose and Colin. Each round, both players choose a number between <m>1</m> and <m>5</m> and simultaneously reveal their decisions. Let their decisions be <m>a</m> and <m>b</m> with <m>a \leq b</m>.
@@ -519,8 +593,12 @@ Every zero sum matrix game <m>A</m> has a unique number <m>v</m>, called the val
 <p>For example, if Rose plays <m>5</m> and Colin plays <m>3</m>, Rose gains <m>5</m> points and Colin gains <m>3</m> for a net difference of <m>+2</m> for Rose. But if Rose plays <m>5</m> and Colin plays <m>4</m>, Rose gets <m>0</m> points and Colin gets <m>9</m> for a net change of <m>-9</m> for Rose!
 </p>
 
-<question>Find a von Neumann solution for Undercut.
+<question>
+<p>
+Find a von Neumann solution for Undercut.
 (Hint: You will be solving a system of linear equations... those of you who have taken linear algebra may have nice techniques for this!)
+</p>
 </question>
+
 
 </chapter>

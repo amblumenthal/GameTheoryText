@@ -2,12 +2,22 @@
     <title>Voting Theory</title>
 
 
-<question> Imagine that you are conducting an election among three (or more) possibilities. Once you collect the ballots, how can you determine the winner? Try to come up with at least <m>3</m> ways to determine a winner. (Note, they do not all have to be ways that you would be happy with.) </question>
+<question>
+<p>
+ Imagine that you are conducting an election among three (or more) possibilities. Once you collect the ballots, how can you determine the winner? Try to come up with at least <m>3</m> ways to determine a winner. (Note, they do not all have to be ways that you would be happy with.)
+</p>
+</question>
 
-<question> Now that we see there are multiple ways to determine a winner, come up with some criteria that you think are ``fair'' for an election. For example, a common one is the following: ``If a candidate is in first place in all ballots, they are in first place in the final results.'' 
+
+
+<question>
+<p>
+ Now that we see there are multiple ways to determine a winner, come up with some criteria that you think are ``fair'' for an election. For example, a common one is the following: ``If a candidate is in first place in all ballots, they are in first place in the final results.'' 
 
 (Note: It can be helpful instead to think about what you might consider unfair, or object to, in a method for determining the winner or ordering.)
+</p>
 </question>
+
 
 <p>In class, we established a few guidelines for ``fairness'' in an election and developed a few election methods. As a reminder, here are the fairness criteria that Arrow's Theorem entail:</p>
 <ol>
@@ -57,8 +67,12 @@
 <p>which means that <m>B</m> is the Borda Count winner.</p>
 
   
-<question> Let there be <m>3</m> candidates, <m>A,B</m> and <m>C</m>. If the ballots come back as
+<question>
+<p>
+ Let there be <m>3</m> candidates, <m>A,B</m> and <m>C</m>. If the ballots come back as
+</p>
 </question>
+
 
 <md> <tabular halign="center">
   <row bottom="minor">
@@ -116,7 +130,11 @@
 </tabular>
 </md>
 
-<question> Determine the winner, if one exists for each voting system defined above. </question>
+<question>
+<p>
+ Determine the winner, if one exists for each voting system defined above. </p>
+</question>
+
 
 
 
@@ -134,8 +152,12 @@ Consider a voting system with at least three candidates. We desire the following
 </ol>
 
 
-<question> For each voting system, try to determine which fairness criteria above they do and do not satisfy. Justify your answers. (Note: if one of them does not satisfy a criterion, you should be able to find an example which violates it in <m>5</m> or less ballots.)
+<question>
+<p>
+ For each voting system, try to determine which fairness criteria above they do and do not satisfy. Justify your answers. (Note: if one of them does not satisfy a criterion, you should be able to find an example which violates it in <m>5</m> or less ballots.)
+</p>
 </question>
+
 
 <p>OUTLINE OF PROOF OF ARROW'S THEOREM </p>
 

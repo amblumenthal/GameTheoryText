@@ -20,9 +20,13 @@ Suppose that Rose has two possible outcomes in a lottery, <m>X</m> with utility 
 </ol>
 </question>
 
-<question> <term>Dating Dilemma</term>:
+<question>
+<p>
+ <term>Dating Dilemma</term>:
 Suppose Rose and Colin have started dating and they are texting to decide what to do this evening. Colin would like to go to the basketball game <m>B</m> and Rose would like to watch a film <m>F</m>. Colin is irresponsible and didn't charge his phone, so it dies before a decision is made, but they both know the two options. They both value time apart as <m>0</m> utility, time together as <m>1</m> utility at the event they didn't suggest, and <m>2</m> utility for being together at the event they suggested.
+</p>
 </question>
+
 
 <ol>
   <li> Make a game matrix for the dating dilemma. </li>
@@ -46,7 +50,11 @@ Rose and Colin have been a mostly happy couple for some time now, but they disag
 <term>Mamihlapinatapai</term> is the situation when two people are staring at one another, each hoping the other will volunteer to do something both want done but neither wants to do.
 </definition>
 
-<question> What should the Rose and Colin do assuming rational play? </question>
+<question>
+<p>
+ What should the Rose and Colin do assuming rational play? </p>
+</question>
+
 
 
 <p> A <term>movement diagram</term> is a matrix with arrows to demonstrate how players are incentivized to move in given situations. For example the prisoner's dilemma's payoff matrix is:
@@ -75,11 +83,13 @@ Rose and Colin have been a mostly happy couple for some time now, but they disag
 </latex-image> 
 
 
-<question> Make the movement diagrams for the games proposed in the previous two questions. What do they tell us about ``stable'' or equilibrium solutions?
+<question>
+<p>
+ Make the movement diagrams for the games proposed in the previous two questions. What do they tell us about ``stable'' or equilibrium solutions?
 
-
-
+</p>
 </question>
+
 
 <p>NASH'S THEOREM</p>
 
@@ -92,7 +102,10 @@ Rose and Colin have been a mostly happy couple for some time now, but they disag
 <p>We will call a strategy for Colin <m>\textbf{q}</m> a <term>best response</term> to a strategy for Rose, <m>\textbf{p}</m>, if Rose has no incentive to change her strategy if Colin continues to play <m>\textbf{q}</m>.</p>
 
 
-<question> Consider the following game matrix:
+<question>
+<p>
+ Consider the following game matrix:
+</p>
 <md>
 <mrow>\begin{bmatrix} (1,-2) \amp (0,2) </mrow>
 <mrow>(-1,3) \amp (3,-1) \end{bmatrix}</mrow>
@@ -117,7 +130,9 @@ If two hawks meet, they will fight, injuring one another making the meal not wor
 </p>
 
 <question>
+<p>
 Consider the following payouts for a meal worth about <m>10</m> utility. With Hawks appearing first in the columns and rows.
+</p>
 
 <md>
 <mrow>\begin{bmatrix}(-5,-5) \amp (10,0)</mrow>
@@ -132,15 +147,21 @@ Consider the following payouts for a meal worth about <m>10</m> utility. With Ha
 </question>
 
 <question>
+<p>
 Consider the following game matrix:
-
+</p>
 <md>
 <mrow>\begin{bmatrix} (1,1) \amp (0,0) </mrow>
 <mrow>(0,0) \amp (1,1)\end{bmatrix}</mrow>
 </md>
 </question>
 
-<question> We can think of this matrix as two subspecies which succeed when working together, but fail when they are mismatched. </question>
+<question>
+<p>
+ We can think of this matrix as two subspecies which succeed when working together, but fail when they are mismatched. 
+</p>
+</question>
+
   
   <ol>
       <li> Find two pure strategy Nash Equilibria using movement diagrams. What do these equilibria mean happen to the subspecies in the long run? </li>
@@ -151,10 +172,13 @@ Consider the following game matrix:
 
 %%%%HERE'S THE SECOND WAY TO DO IT, WORKED BETTER, BUT PROBABLY LESS GENERAL? NEED TO REVISIT TO MAKE A CHOICE/MORE CLEAR INSTRUCTIONS
 
-<question> Imagine you are a bird flying around looking for food. All birds in the area are either hawks or doves.  
+<question>
+<p>
+ Imagine you are a bird flying around looking for food. All birds in the area are either hawks or doves.  
 If two hawks meet, they fight producing a utility of <m>-5</m> for one another because they both leave injured and the food likely escapes.  
 If two doves meet, they chat about shared acquaintences and lose track of the time as some of the food escapes, and then share the remainder of the meal for a utility of <m>4</m> for each.  
 If a dove and a hawk meet, the dove knows the hawk will fight and is not trying to catch those hands (or wings/talons/beaks) and leaves the entire meal for the hawk. The hawk gets <m>10</m> utility and the dove gets <m>0</m>.
+</p>
 <ol>
   <li> Imagine you are a hawk. You see a food in the distance and head towards it. As you approach, you see another bird is also approaching.   Determine the expected utility of this interaction for you (a hawk) if the probability of the other bird being a hawk is <m>1/3</m> and the probability of the other bird being a dove is <m>2/3</m>.</li>
   <li> Find the expected utility in the previous scenario for when the probability of the other bird being a hawk is <m>p</m> and probability of being a dove is <m>1-p</m>.</li>
@@ -215,7 +239,10 @@ A game matrix <m>A</m> is said to be <term>symmetric</term> if <m>A</m> satisfie
 
 
 
-<question> Let <m>\textbf{d}</m> represent the mixed equilibrium strategy for Rose. Let <m>\textbf{c}^T</m> be the row version of Colin's strategy (saying that Rose takes the same strategy as Colin). 
+<question> 
+  <p> 
+    Let <m>\textbf{d}</m> represent the mixed equilibrium strategy for Rose. Let <m>\textbf{c}^T</m> be the row version of Colin's strategy (saying that Rose takes the same strategy as Colin). 
+  </p>
 <ol>
   <li> For each pure strategy <m>\textbf{c}</m> for Colin in Hawks v Doves calculate <m>\textbf{d} R \textbf{c}</m>. (Here <m>d = [6/11, 5/11]</m>.  What do these values mean in terms of expected value?</li>
   <li> For each pure strategy <m>\textbf{c}</m> for Colin, calculate <m>\textbf{c}^T R \textbf{c}</m> for the Hawks v Doves game. What does this tell you compared to the previous part? Which strategies are best for Rose?</li>

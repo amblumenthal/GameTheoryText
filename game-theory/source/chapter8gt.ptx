@@ -22,8 +22,12 @@ If they both bet, they reveal their unrevealed cards, and the player with the hi
 </ol>
 
 
-<question> Consider the following game matrix, a variation on the Prisoner's Dilemma:
-</question><md>
+<question>
+<p>
+ Consider the following game matrix, a variation on the Prisoner's Dilemma:
+</p>
+</question>
+<md>
 <mrow>\begin{bmatrix}(2,2) \amp (0,3) </mrow>
 <mrow>(3,0) \amp (1,1) \end{bmatrix}</mrow>
 </md>
@@ -41,8 +45,12 @@ If they both bet, they reveal their unrevealed cards, and the player with the hi
 
 
   
-<question> Consider the following game matrix, a variation on the Prisoner's Dilemma: (Note: we will call strategy <m>1</m> cooperate, and strategy <m>2</m> defect for each player)
-</question><md>PD = 
+<question>
+<p>
+ Consider the following game matrix, a variation on the Prisoner's Dilemma: (Note: we will call strategy <m>1</m> cooperate, and strategy <m>2</m> defect for each player)
+</p>
+</question>
+<md>PD = 
 <mrow>\begin{bmatrix}(2,2) \amp (0,3) </mrow>
 <mrow>(3,0) \amp (1,1)/end{bmatrix} </mrow>
 </md>
@@ -66,15 +74,22 @@ Let <m>A</m> be a matrix game and <m>0 \leq \delta \leq 1</m>. The game <m>Repea
 A \textit{pure strategy} in the game <m>Repeat(A, \delta)</m> is a rule that indicates what choice to make on the <m>k^{th}</m> round depending only on what the players chose in rounds <m>1, 2 \dots , k-1</m>.
 </definition>
 
-<question> Give some examples of pure strategies that are not ``always cooperate'' or ``always defect.''
+<question>
+<p>
+ Give some examples of pure strategies that are not ``always cooperate'' or ``always defect.''
+</p>
+</question>
+ 
 
+<question>
+<p>
+ The strategy <term>grim trigger</term> strategy cooperates until the opponent defects in the game <m>PD</m>, then you defect forever. Calculate the expected value of a the grim trigger strategy in which the opponent cooperates for the first <m>i</m> rounds for <m>Repeat(PD, \delta)</m>. 
+</p>
+</question>
 
-</question> 
-
-<question> The strategy <term>grim trigger</term> strategy cooperates until the opponent defects in the game <m>PD</m>, then you defect forever. Calculate the expected value of a the grim trigger strategy in which the opponent cooperates for the first <m>i</m> rounds for <m>Repeat(PD, \delta)</m>. 
-
-
-</question>We now seek to find a Nash Equilibrium in a repeated game. We saw last class that geometric series will play an important role in our analysis. I will prove a claim that we used before without proof:
+<p>
+We now seek to find a Nash Equilibrium in a repeated game. We saw last class that geometric series will play an important role in our analysis. I will prove a claim that we used before without proof:
+</p>
 <theorem>
 Let <m>0 \leq \delta \leq 1</m>. Then, <me>\sum_{i=0}^{\infty} t \delta^i = \frac{t}{1-\delta}.</me>
 </theorem>
@@ -91,7 +106,10 @@ Let <m>0 \leq \delta \leq 1</m>. Then, <me>\sum_{i=0}^{\infty} t \delta^i = \fra
 </md>
 
   
-<question> Consider the following game matrix, a variation on the Prisoner's Dilemma: (Note: we will call strategy <m>1</m> cooperate, and strategy <m>2</m> defect for each player)
+<question>
+<p>
+ Consider the following game matrix, a variation on the Prisoner's Dilemma: (Note: we will call strategy <m>1</m> cooperate, and strategy <m>2</m> defect for each player)
+</p>
   <md>PD = 
   <mrow>\begin{bmatrix}(2,2) \amp (0,3)</mrow>
   <mrow>(3,0) \amp (1,1)\end{bmatrix}</mrow>
@@ -99,21 +117,31 @@ Let <m>0 \leq \delta \leq 1</m>. Then, <me>\sum_{i=0}^{\infty} t \delta^i = \fra
 </question>
 
 
-<question> The strategy <term>grim trigger</term> strategy cooperates until the opponent defects in the game <m>PD</m>, then you defect forever. We want to determine a best response to the grim trigger strategy. Imagine you are playing against grim trigger.
-<ol>
+<question>
+<p>
+ The strategy <term>grim trigger</term> strategy cooperates until the opponent defects in the game <m>PD</m>, then you defect forever. We want to determine a best response to the grim trigger strategy. Imagine you are playing against grim trigger.
+</p>
+ <ol>
   <li>Once you defect once, should you ever choose to cooperate again? Justify your answer. </li>
   <li> What does the previous question tell us about what an optimal strategy against grim trigger looks like? </li>
 </ol>
 </question>
 
 
-<question> We now consider the game <m>Repeat(PD,\delta)</m> for any <m>\delta</m>. Calculate the expected value of the following strategy played against grim trigger: cooperate until round <m>k</m>, then defect forever. Note that this is an upper bound on expected value for any strategy that defects for the first time on round <m>k</m>. 
+<question>
+<p>
+ We now consider the game <m>Repeat(PD,\delta)</m> for any <m>\delta</m>. Calculate the expected value of the following strategy played against grim trigger: cooperate until round <m>k</m>, then defect forever. Note that this is an upper bound on expected value for any strategy that defects for the first time on round <m>k</m>. 
 (Try to simplify the expected value to something that could easily be calculated as a function of <m>k</m> and <m>\delta</m> using the theorem about geometric series above.)
+</p>
 </question>
 
 
-<question> Now that we have an upper bound on the expected value of a strategy against the grim trigger. We want to maximize that expected value, but it depends on <m>\delta</m> and <m>k</m>. Let us find the break points for <m>\delta</m> that cause us to choose to defect at different times.
-<ol>
+
+<question>
+<p>
+ Now that we have an upper bound on the expected value of a strategy against the grim trigger. We want to maximize that expected value, but it depends on <m>\delta</m> and <m>k</m>. Let us find the break points for <m>\delta</m> that cause us to choose to defect at different times.
+</p>
+ <ol>
   <li> Calculate when <m>(1 - \frac{\delta}{1-\delta}) = 0</m>. </li>
   <li> If <m>\delta</m> is less than the value calculated above, what round should we defect to maximum payout in <m>Repeat(PD, \delta)</m> against grim trigger? (That is, by fixing <m>\delta</m>, what <m>k</m> value gives maximum expected value.) Why? </li>
   <li> When should we defect against grim trigger if <m>\delta</m> is greater than the value calculated in part <m>a</m>? </li>

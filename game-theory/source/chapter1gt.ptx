@@ -1,11 +1,16 @@
 <chapter xml:id="DefiningGames">
       <title>Defining Games</title>
 
-<question>What is a game? Explore your definition. Try to bend it. Try to break it. List at least 3 examples of games and 3 examples of things that are not games (but might be dangerously close) according to your definition.
+<question>
+        <p> 
+            What is a game? Explore your definition. Try to bend it. Try to break it. List at least 3 examples of games and 3 examples of things that are not games (but might be dangerously close) according to your definition.
+        </p>
 </question>
 
-<question> Play each of the following games a couple of times to get familiar with the rules. (You can find playing boards for some of the games in the pages below)
-
+<question> 
+    <p> 
+        Play each of the following games a couple of times to get familiar with the rules. (You can find playing boards for some of the games in the pages below)
+    </p>
 </question>
 
 <ol>
@@ -17,24 +22,31 @@
 </ol>
     
     
-<question> Make a list of at least 10 similarities/differences between the games you've played above.
-    
+<question> 
+    <p> 
+        Make a list of at least 10 similarities/differences between the games you've played above.  
+    </p>
 </question>
-\includegraphics[width = 4in]{Images/tictactoeboard.png}
+<p>Tic-Tac-Toe Board:</p>
 
+<latex>
+    \includegraphics[width = 4in]{Images/tictactoeboard.png}
+</latex>
 
 <p>Chomp Board:</p>
-\includegraphics[width = 4in]{Images/700px-Chomp_gameplay.png}
+<latex>
+    \includegraphics[width = 4in]{Images/700px-Chomp_gameplay.png}
+</latex>
 
 <p>Below is a legal game of chomp in which the first player would lose. </p>
-\includegraphics[width = 4in]{Images/Chomp_gameplay.png}
-
+<latex>
+    \includegraphics[width = 4in]{Images/Chomp_gameplay.png}
+</latex>
 
 <p>Hex Board</p>
-\includegraphics[width = 6in]{Images/hexgameboard.png}
-
-    
-
+<latex>
+    \includegraphics[width = 6in]{Images/hexgameboard.png}
+</latex>
 
 <question xml:id="SomeGames"> Now that you're familiar with the rules, try to develop a strategy for each game. If BOTH players make ``optimal decisions'' what happens? How can you tell? [It may help to start with smaller versions of the games to get an idea, for example pick-up stones with only 7 or 8 rocks.]
 
@@ -47,7 +59,10 @@
 </ol>
 </question>
 
-<question> ``Strategy'' is not really something we talked about. What does that mean? How can we formalize it?
+<question> 
+    <p> 
+        ``Strategy'' is not really something we talked about. What does that mean? How can we formalize it?
+    </p>
 </question>
 
 </chapter>

@@ -10,14 +10,26 @@
 A combinatorial game is called a <term>normal play game</term> if the win rule is that the last player that can make a move wins.
 </definition>
 
-<question> Cut-Cake is a normal play game between two players Richard and Louise. Each position is a collection of uncut pieces of cake. Each piece of cake is rectangular and has dotted horizontal and vertical lines which show where the cake can be cut. On her turn, Louise can make one vertical cut. Richard can make one horizontal cut on his turns. (The last player to make a cut wins.) 
-</question>Play several games of cut-cake on a <m>5</m> by <m>4</m> cake. Can you come up with a strategy? When can you tell that a game is over?
+<p>
+ Cut-Cake is a normal play game between two players Richard and Louise. Each position is a collection of uncut pieces of cake. Each piece of cake is rectangular and has dotted horizontal and vertical lines which show where the cake can be cut. On her turn, Louise can make one vertical cut. Richard can make one horizontal cut on his turns. (The last player to make a cut wins.) 
+</p>
 
+<question>
+<p>
+    Play several games of cut-cake on a <m>5</m> by <m>4</m> cake. Can you come up with a strategy? When can you tell that a game is over?
+</p>
+</question>
 
 
 <p> Normal Play games are more simple to analyze since the winning condition is the same for both players (and there are no draws). As such, we would like to build a tool to analyze them more robustly. </p>
-<question>Try to develop notation to denote a position of cut-cake regardless of who's turn it is. What information do we need to know? What positions could we end up at? 
-Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and all of the positions you can move to from this position.</question>
+<question>
+<p>
+Try to develop notation to denote a position of cut-cake regardless of who's turn it is. What information do we need to know? What positions could we end up at? 
+Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and all of the positions you can move to from this position.
+</p>
+</question>
+
+
 
 
 
@@ -42,8 +54,12 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 
 
 
-<question> For each of the following cut-cake positions, determine the <term>types</term> of the game: Current, Previous, L, or R.
-</question><ul>
+<question>
+<p>
+ For each of the following cut-cake positions, determine the <term>types</term> of the game: Current, Previous, L, or R.
+</p>
+</question>
+<ul>
     <li> Two <m>2 \times 1</m> boards and one <m>1 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board and one <m>1 \times 2</m> board </li>
@@ -53,9 +69,13 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 
 
 
-<question> Try to come up with general rules rules to determine the type of a position <m>\gamma = \{ a_1, a_2, \dots , a_m | b_1, b_2, \dots b_n\}</m>. When do I know that <m>\gamma</m> is type <m>L</m>, <m>R</m>, Current, or Previous? (Think about how we proved Zermelo's theorem: look at the positions we can move to and decide what the best thing each player can do is.)
+<question>
+<p>
+ Try to come up with general rules rules to determine the type of a position <m>\gamma = \{ a_1, a_2, \dots , a_m | b_1, b_2, \dots b_n\}</m>. When do I know that <m>\gamma</m> is type <m>L</m>, <m>R</m>, Current, or Previous? (Think about how we proved Zermelo's theorem: look at the positions we can move to and decide what the best thing each player can do is.)
 
+</p>
 </question>
+
 
 <p>We will now start to think of positions of games more like numbers to analyze them algebraically. In fact, we've already started thinking about doing that when we said that Pick Up Stones 2: Electric Boogaloo was like playing two games of Pick Up Stones added together. 
 </p>
@@ -63,13 +83,21 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 <p>In situations like this, we could say that Pick Up Stones 2 with <m>n</m> and <m>m</m> stones is the same as Pick Up Stones with <m>n</m> stones <m>+</m> Pick Up Stones with <m>m</m> stones. The two games being added together are often called <term>components</term> of the game. In sums of games, on a player's turn they choose one component to play in and make one move in that game, then their turn ends. (Just like with Pick Up Stones 2)
 </p>
 
-<question> For each of the games in <m>1</m>, play the sum of that game plus Pick Up Stones with <m>4</m> stones. Try to determine which type the game is.
+<question>
+<p>
+ For each of the games in <m>1</m>, play the sum of that game plus Pick Up Stones with <m>4</m> stones. Try to determine which type the game is.
 
 
+</p>
 </question>
 
-<question> For each of <m>a</m> through <m>e</m>, play the sum of that game plus Pick Up Stones with <m>4</m> stones. Determine which type the game is.
-</question><ol>
+
+<question>
+<p>
+ For each of the following, play the sum of that game plus Pick Up Stones with <m>4</m> stones. Determine which type the game is.
+</p>
+</question>
+<ol>
     <li> Two <m>2 \times 1</m> boards and one <m>1 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board and one <m>1 \times 2</m> board </li>
@@ -83,12 +111,19 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 <p>Pick up bricks is a game that is played like pick up stones, but the last brick is not poisoned. Instead pick up bricks is a normal play game (so the last player to be able to pick up a brick wins). 
 </p>
 
-<question> Determine the type for Pick up bricks with <m>4</m> bricks. Then, for each of <m>a</m> through <m>e</m> above, play the sum of that game plus Pick up bricks with <m>4</m> bricks. Determine which type the game is.
+<question>
+<p>
+ Determine the type for Pick up bricks with <m>4</m> bricks. Then, for each of <m>a</m> through <m>e</m> above, play the sum of that game plus Pick up bricks with <m>4</m> bricks. Determine which type the game is.
+</p>
+</question>
+ 
 
-</question> 
-
-<question> Make conjectures about how types interact with sums. Try to justify your thoughts. For example, the top left corner of this table should be filled in with your guess for what type a game <m>a + b</m> would be if <m>a</m> was type <m>R</m> and <m>b</m> was type <m>R</m>. (Question 2 might lead to an interesting extension...)
-</question>\vspace{.5in}
+<question>
+<p>
+ Make conjectures about how types interact with sums. Try to justify your thoughts. For example, the top left corner of this table should be filled in with your guess for what type a game <m>a + b</m> would be if <m>a</m> was type <m>R</m> and <m>b</m> was type <m>R</m>. (Question 2 might lead to an interesting extension...)
+</p>
+</question>
+\vspace{.5in}
 \resizebox{4.5in}{!}{
 
     <tabular halign="center">
@@ -139,7 +174,10 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
     \includegraphics[width = 4in, angle = -2.3, origin = c]{Images/domineeringex.pdf}
 
 
-<question> Determine the type of the following domineering positions:
+<question> 
+    <p>
+        Determine the type of the following domineering positions:
+    </p>
 <ol>
     <li> One <m>2\times 2</m> board </li>
     <li> One <m>1 \times 2</m> board </li>
@@ -151,11 +189,15 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 
 
 
-<question> Prove the following:
+<question>
+<p>
+ Prove the following:
+</p>
 <theorem xml:id="Thm-Pis0">
 If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta</m> is the same type as <m>\alpha</m>.
 </theorem>
 </question>
+
  
 
 <p>It is finally time to answer a critical question. When are two games the same?
@@ -165,9 +207,12 @@ If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta</m> is the same type as
 We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
 </definition>
 
-<question> Is the following domineering game above equivalent to pick-up bricks with one brick? 
-
+<question>
+<p>
+ Is the following domineering game above equivalent to pick-up bricks with one brick? 
+</p>
 </question>
+
 <latex-image>
 \begin{tikzpicture}
 \draw[thick] (0,0) -- (0,2);
@@ -181,8 +226,12 @@ We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly differen
 
 
 
-<question> Is a <m>1 \times 2</m> game of domineering equivalent to a <m>1 \times 4</m> game of domineering?
+<question>
+<p>
+ Is a <m>1 \times 2</m> game of domineering equivalent to a <m>1 \times 4</m> game of domineering?
+</p>
 </question>
+
 
 <definition>
 We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
@@ -190,9 +239,12 @@ We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly differen
 
 
 
-<question> Use the definition of equivalent to prove the following (Hint: some of these proofs might be VERY short):
+<question> 
+    <p>
+        Use the definition of equivalent to prove the following (Hint: some of these proofs might be VERY short):
+    </p>
 <theorem xml:id="Thm-NormalSums">
-If <m>\alpha, \beta</m>, and <m>\gamma</m> are positions in normal-play games
+<p> If <m>\alpha, \beta</m>, and <m>\gamma</m> are positions in normal-play games</p>
 <ol>
     <li> <m>\alpha \equiv \alpha</m>.  </li>
     <li> If <m>\alpha \equiv \beta</m> then <m>\beta \equiv \alpha</m>. </li>
@@ -203,7 +255,10 @@ If <m>\alpha, \beta</m>, and <m>\gamma</m> are positions in normal-play games
 
 
 
-<question> We want to explore the relationship between equivalence and type. Decide if the following are true. Justify your answers.
+<question> 
+    <p>
+        We want to explore the relationship between equivalence and type. Decide if the following are true. Justify your answers.
+    </p>
 <ol>
     <li> If <m>\alpha</m> and <m>\beta</m> have the same type, then <m>\alpha \equiv \beta</m>. </li>
     <li> If <m>\alpha \equiv \beta</m>, then <m>\alpha</m> and <m>\beta</m> have the same type. </li>
@@ -212,8 +267,12 @@ If <m>\alpha, \beta</m>, and <m>\gamma</m> are positions in normal-play games
  
 <p>Theorem REFERENCE establishes that <m>P</m> games are very special. The following explores this idea in an algebraic sense.</p>
 
-<question> Prove the following:
-</question><ol>
+<question>
+<p>
+ Prove the following:
+</p>
+</question>
+<ol>
     <li> If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta \equiv \alpha</m>. </li>
     <li> If <m>\alpha</m> and <m>\alpha'</m> are type <m>P</m> then <m>\alpha \equiv \alpha'</m>. </li>
     <li> Are any <m>P</m> states different from (or not equivalent to) any other <m>P</m> states? </li>

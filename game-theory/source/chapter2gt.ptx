@@ -13,17 +13,24 @@
     </statement>
 </definition>
 
-<question> Which of the games in REFERENCE are Combinatorial Games (as we defined them) and which are not? Why?</question>
-
-<question> The game of Tic is similar to tic tac toe, but is played on a 1 by 3 board. On a player's turn, they fill one empty square with their symbol, <m>\times</m> for the first player, and <m>O</m> for the second player. A player wins if they get two consecutive squares filled with their symbols. Determine if any player has a winning strategy. Justify your answer.
+<question>
+<p> Which of the games in REFERENCE are Combinatorial Games (as we defined them) and which are not? Why?
+</p>
 </question>
 
-<question> Justifying that you have a winning strategy is a pain. Try to brainstorm a way to visualize the entirety of a game (that is all things that could have happened). Describe how you would create such a visualization, and then use it to visualize Tic.
+<question>
+<p> The game of Tic is similar to tic tac toe, but is played on a 1 by 3 board. On a player's turn, they fill one empty square with their symbol, <m>\times</m> for the first player, and <m>O</m> for the second player. A player wins if they get two consecutive squares filled with their symbols. Determine if any player has a winning strategy. Justify your answer.
+</p>
 </question>
 
-<question> Use your visualization of Tic to decide who has a winning strategy. Does your visualization give all of the information necessary to justify that a strategy is a winning strategy? What does a strategy look like in the context of your visualization? 
+<question>
+<p> Justifying that you have a winning strategy is a pain. Try to brainstorm a way to visualize the entirety of a game (that is all things that could have happened). Describe how you would create such a visualization, and then use it to visualize Tic.
+</p>
+</question>
 
-
+<question>
+<p> Use your visualization of Tic to decide who has a winning strategy. Does your visualization give all of the information necessary to justify that a strategy is a winning strategy? What does a strategy look like in the context of your visualization? 
+</p>
 </question>
 
 <p>When analyzing games, we would like to take a step back from looking at the actual game board. (Some games may look different, but play essentially the same way as we were discussing with what makes games ``the same.'')
@@ -67,9 +74,9 @@
 <p> We can build on our tree by saying that sometimes (maybe always?) we know if a position is winning or not, and for whom! We will build on that in this assignment. </p>
 
 
-<question> Draw onto the WLD tree optimal strategies for <m>R</m> and <m>L</m>. 
-
-
+<question>
+<p> Draw onto the WLD tree optimal strategies for <m>R</m> and <m>L</m>. 
+</p>
 </question>
 <latex-image>
 \begin{tikzpicture}[scale = 1.5]
@@ -119,10 +126,14 @@
 </latex-image>
 
 
-<question> Think about the positions in the game above (one at a time). Can we determine if <m>R</m> is winning, <m>L</m> is winning, or if it is a draw. If so, how? 
+<question>
+<p> Think about the positions in the game above (one at a time). Can we determine if <m>R</m> is winning, <m>L</m> is winning, or if it is a draw. If so, how? 
+</p>
 </question>
 
-<question> Look back at the Tic WLD Game Tree and decide the outcome of the game from EVERY position assuming optimal play! Mark any position where <m>R</m> has a winning strategy with <m>-+</m>, any position where <m>L</m> has a winning strategy with <m>+-</m>, and any position where neither player has a winning strategy with <m>00</m>. Are there some positions that are more interesting to know this type for? 
+<question>
+<p> Look back at the Tic WLD Game Tree and decide the outcome of the game from EVERY position assuming optimal play! Mark any position where <m>R</m> has a winning strategy with <m>-+</m>, any position where <m>L</m> has a winning strategy with <m>+-</m>, and any position where neither player has a winning strategy with <m>00</m>. Are there some positions that are more interesting to know this type for? 
+</p>
 </question>
 
 <latex-image>
@@ -158,20 +169,32 @@
 
 
 
-<question> Formally prove (by using induction on how many layers are in the tree) that in every Combinatorial Game exactly one of the following holds: (You may assume that <m>R</m> has the first move)
+<question> 
+    <p>
+        Formally prove (by using induction on how many layers are in the tree) that in every Combinatorial Game exactly one of the following holds: (You may assume that <m>R</m> has the first move)
+    </p>
 </question><ul>
     <li> Louise has a winning strategy. </li>
     <li> Richard has a winning strategy. </li>
     <li> Both players have drawing strategies. </li>
 </ul>
 
-<question> Think about the consequence of this theorem. What does it mean about combinatorial games? Can we know who will win before the first move is even taken?
+<question>
+<p> Think about the consequence of this theorem. What does it mean about combinatorial games? Can we know who will win before the first move is even taken?
+</p>
 </question>
+
 
 <p> There is a problem with our general solution to combinatorial games. Time and computing power are limited! Instead we might like to build strategies by taking advantage of rules or symmetries to give meaningful instructions that would tell a player what to do in any scenario rather that building a gigantic tree.
 </p>
 
-<question> For each of the following games try to come up with an optimal strategy which can be described in words. Determine if <m>R</m> has a winning strategy, <m>L</m> has a winning strategy, or if the both have drawing strategies. Justify your answers.</question>
+<question> 
+    <p> 
+    For each of the following games try to come up with an optimal strategy which can be described in words. Determine if <m>R</m> has a winning strategy, <m>L</m> has a winning strategy, or if the both have drawing strategies. Justify your answers.
+    </p>
+</question>
+
+
 <ol>
     <li> Pick up stones with 7 stones. </li>
     <li> Pick up stones with <m>n</m> stones. </li>
@@ -185,9 +208,11 @@
 <p>We now notice a type of symmetry in chomp to develop <term>strategy stealing</term>. The idea is that if a second player could move to a winning position, the first player could have taken moves to get to that position.
 </p>
 
-<question> Prove the following by contradiction:
-
-</question><theorem>
+<question>
+<p> Prove the following by contradiction:
+</p>
+</question>
+<theorem>
 For every rectangular position in chomp (except the <m>1</m> by <m>1</m> board) the first player has a winning strategy.
 </theorem>
 
