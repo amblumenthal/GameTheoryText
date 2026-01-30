@@ -75,9 +75,15 @@
 
 
 <question>
-<p> Draw onto the WLD tree optimal strategies for <m>R</m> and <m>L</m>. 
+<p> Draw onto the WLD tree below optimal strategies for <m>R</m> and <m>L</m>. 
 </p>
 </question>
+
+<figure xml:id="WLDGameTree">
+  <caption> A WLD Game Tree
+  </caption>
+  <image  xml:id="gameTree1">
+
 <latex-image>
 \begin{tikzpicture}[scale = 1.5]
     \node[circle, draw] at (0,0) (root) {R};
@@ -107,6 +113,8 @@
     
 \end{tikzpicture}
 </latex-image>
+</image>
+</figure>
  
 
 
@@ -174,9 +182,9 @@
         Formally prove (by using induction on how many layers are in the tree) that in every Combinatorial Game exactly one of the following holds: (You may assume that <m>R</m> has the first move)
     </p>
 <ul>
-    <li> <p>Louise has a winning strategy.<p> </li>
-    <li> <p>Richard has a winning strategy.<p> </li>
-    <li> <p>Both players have drawing strategies.<p> </li>
+    <li> <p> Louise has a winning strategy.</p></li>
+    <li> <p> Richard has a winning strategy. </p> </li>
+    <li> <p>Both players have drawing strategies.</p> </li>
 </ul>
 </question>
 
