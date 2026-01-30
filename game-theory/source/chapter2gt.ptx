@@ -3,13 +3,13 @@
 
 <definition>
     <statement>
-        A game is said to be a <term>Combinatorial Game</term> if it is a sequential two player game with 
-        <ol>
-        <li> A set of possible positions (sometimes called states of the game) </li>
-        <li> A move rule indicating for each position, what positions can be moved to </li>
-        <li> A win rule indicating a set of terminal positions where the game ends in which each terminal position has an associated outcome (which player wins) </li>
-        <li> Both players have total knowledge of the position(s), move rule, and win rule during their turn </li>
-        </ol>
+        <p> A game is said to be a <term>Combinatorial Game</term> if it is a sequential two player game with </p>
+        <list type="bullet">
+            <li><p> A set of possible positions (sometimes called states of the game) </p></li>
+            <li><p> A move rule indicating for each position, what positions can be moved to </p></li>
+            <li><p> A win rule indicating a set of terminal positions where the game ends in which each terminal position has an associated outcome (which player wins) </p></li>
+            <li><p> Both players have total knowledge of the position(s), move rule, and win rule during their turn </p></li>
+        </list>
     </statement>
 </definition>
 
@@ -36,7 +36,7 @@
 <p>When analyzing games, we would like to take a step back from looking at the actual game board. (Some games may look different, but play essentially the same way as we were discussing with what makes games ``the same.'')
 </p>
 
-<p>As such, let me abstract the game tree slightly further than where we ended in class. A <term>WLD Game Tree</term> condenses the information of our game tree by suppressing the game board. For example, the WLD Game tree for Tic is as follows: 
+<p>As such, let us abstract the game tree slightly further than where we ended in class. A <term>WLD Game Tree</term> condenses the information of our game tree by suppressing the game board. For example, the WLD Game tree for Tic is as follows: 
 </p>
 
 <latex-image>
@@ -173,11 +173,12 @@
     <p>
         Formally prove (by using induction on how many layers are in the tree) that in every Combinatorial Game exactly one of the following holds: (You may assume that <m>R</m> has the first move)
     </p>
-</question><ul>
-    <li> Louise has a winning strategy. </li>
-    <li> Richard has a winning strategy. </li>
-    <li> Both players have drawing strategies. </li>
+<ul>
+    <li> <p>Louise has a winning strategy.<p> </li>
+    <li> <p>Richard has a winning strategy.<p> </li>
+    <li> <p>Both players have drawing strategies.<p> </li>
 </ul>
+</question>
 
 <question>
 <p> Think about the consequence of this theorem. What does it mean about combinatorial games? Can we know who will win before the first move is even taken?
@@ -211,10 +212,12 @@
 <question>
 <p> Prove the following by contradiction:
 </p>
-</question>
-<theorem>
-For every rectangular position in chomp (except the <m>1</m> by <m>1</m> board) the first player has a winning strategy.
-</theorem>
 
+<theorem>
+<p>
+    For every rectangular position in chomp (except the <m>1</m> by <m>1</m> board) the first player has a winning strategy.
+</p>
+</theorem>
+</question>
 
 </chapter>

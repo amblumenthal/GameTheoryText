@@ -7,7 +7,7 @@
 
 
 <definition>
-A combinatorial game is called a <term>normal play game</term> if the win rule is that the last player that can make a move wins.
+<p> A combinatorial game is called a <term>normal play game</term> if the win rule is that the last player that can make a move wins.</p>
 </definition>
 
 <p>
@@ -48,7 +48,9 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 
 <p> We develop the following <term>Position Notation</term> for normal play games using set notation. On the left hand side are the positions Louise could move to, and on the right hand side are the positions that Richard could move to. </p>
 
-
+<p> 
+    PICTURE OF POSITION NOTATION
+</p>
     \includegraphics[width = \textwidth]{Images/PXL_20220907_154711388.jpg}
     (Sorry I got lazy with the picture)
 
@@ -58,7 +60,7 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 <p>
  For each of the following cut-cake positions, determine the <term>types</term> of the game: Current, Previous, L, or R.
 </p>
-</question>
+
 <ul>
     <li> Two <m>2 \times 1</m> boards and one <m>1 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board </li>
@@ -66,6 +68,7 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
     <li> One <m>3 \times 2</m> board </li>
     <li> Pick up Stones with <m>4</m> stones. </li>
 </ul>
+</question>
 
 
 
@@ -96,7 +99,7 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 <p>
  For each of the following, play the sum of that game plus Pick Up Stones with <m>4</m> stones. Determine which type the game is.
 </p>
-</question>
+
 <ol>
     <li> Two <m>2 \times 1</m> boards and one <m>1 \times 2</m> board </li>
     <li> One <m>2 \times 2</m> board </li>
@@ -104,7 +107,7 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
     <li> One <m>3 \times 2</m> board </li>
     <li> Pick up Stones with <m>4</m> stones. </li>
 </ol>
-
+</question>
 
 
 
@@ -136,41 +139,44 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
         </row>
         <row top="minor" bottom="minor"> 
             <cell right="minor">R</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
         </row>
         <row top="minor" bottom="minor"> 
             <cell right="minor">L</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
         </row>
         <row top="minor" bottom="minor"> 
             <cell right="minor">C</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
         </row>
         <row top="minor" bottom="minor"> 
             <cell right="minor">P</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
-            <cell>\hspace{.2in}</cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
+            <cell>    </cell>
         </row>
     </tabular>
 }
 
-
+<p>
 <term>Domineering</term> is a normal-play game played using some squares from a rectangular array. On Louise's turn, she may place a <m>2\times 1</m> domino over two unoccupied squares. On Richard's turn, he may place a <m>1 \times 2</m> domino over two unoccupied squares. (The last player to make a move wins.)
+</p>
 
 <p>Below is a valid game of domineering in which Richard wins: </p>
 
-
+<p>
+    PICTURE OF DOMINEERING
+</p>
     \includegraphics[width = 4in, angle = -2.3, origin = c]{Images/domineeringex.pdf}
 
 
@@ -204,7 +210,8 @@ If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta</m> is the same type as
 </p>
 
 <definition>
-We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
+    <p> We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
+    </p>
 </definition>
 
 <question>
@@ -234,7 +241,8 @@ We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly differen
 
 
 <definition>
-We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
+<p> We say that two positions <m>\alpha</m> and <m>\alpha'</m> in (possibly different) normal-play games are <term>equivalent</term> if for every position <m>\beta</m> in any normal play game, the two positions <m>\alpha + \beta</m> and <m>\alpha' + \beta</m> have the same type. We will write <m>\alpha \equiv \alpha'</m> to indicate this.
+</p>
 </definition>
 
 
