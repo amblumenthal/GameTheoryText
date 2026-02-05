@@ -124,7 +124,9 @@ Let <m>n</m> be a nonnegative integer. The binary expansion of <m>n</m> is a rep
 
 
 <definition>[Balanced]
-A position in Nim <m>*a_1 + *a_2 + \dots + *a_n</m> is said to be <term>balanced</term> if for every power of <m>2</m>, the total number of subpiles of that size is even.
+<p>
+    A position in Nim <m>*a_1 + *a_2 + \dots + *a_n</m> is said to be <term>balanced</term> if for every power of <m>2</m>, the total number of subpiles of that size is even.
+</p>
 </definition>
 
 <question>
@@ -162,7 +164,7 @@ First we will prove a useful fact for finding a move.
 <p>
  Determine if each position below is balanced, then if it is unbalanced find a move that balances the position. (Hint: It may be easier to see with binary representations/nim sums... and we did the previous problem for a reason.)
 </p>
-</question>
+
 <ol>
     <li> <m>*11 + *13 + *7 + *12</m> </li>
     <li> <m>*6 + *13 + *7 + *12</m> </li>
@@ -170,24 +172,26 @@ First we will prove a useful fact for finding a move.
     <li> <m>*1 + *2 + *3</m> </li>
     <li> <m>*2 + *4 + *6</m> </li>
 </ol>
-
+</question>
 
 
 <p>We now address a conjecture from before: </p>
 <claim xml:id="Conj-BalancedTypeP">
-A position in nim is type P is and only if it is balanced.
+<p> A position in nim is type P is and only if it is balanced. </p>
 </claim>
 
 <p>We also introduce a new claim which is related (perhaps unintuitively) to our conjecture. </p>
 
-<claim>
-If <m>a_1,\dots , a_\ell</m> are nonnegative integers and <m>b = a_1 \oplus a_2 \oplus \dots \oplus a_\ell</m>, then <me>*a_1 + *a_2 + \dots + *a_\ell \equiv *b</me>
+<claim xml:id="Claim-NimSumNimber">
+<p>
+    If <m>a_1,\dots , a_\ell</m> are nonnegative integers and <m>b = a_1 \oplus a_2 \oplus \dots \oplus a_\ell</m>, then <me>*a_1 + *a_2 + \dots + *a_\ell \equiv *b</me>
+</p>
 </claim>
 
 
 <question> 
 <ol>
-    <li> Prove the Claim REFERENCE.   </li>
+    <li> Prove Claim <xref ref="Claim-NimSumNimber" text="type-global"/>.   </li>
     <li> How is the claim related to our conjecture? Why is this claim so exciting to game theorists? What does it allow us to do? </li>
 </ol>
 </question>
@@ -205,7 +209,9 @@ If <m>a_1,\dots , a_\ell</m> are nonnegative integers and <m>b = a_1 \oplus a_2 
 
 
 <definition>
-For a set <m>S = \{a_1,a_2,\dots,a_n\}</m> of nonnegative integers, we define the <term>Minimal EXcluded value</term> (abbreviated as <term>MEX</term>) of <m>S</m> to be the smallest nonnegative integer <m>B</m> which is not in <m>S</m>. 
+<p>
+    For a set <m>S = \{a_1,a_2,\dots,a_n\}</m> of nonnegative integers, we define the <term>Minimal EXcluded value</term> (abbreviated as <term>MEX</term>) of <m>S</m> to be the smallest nonnegative integer <m>B</m> which is not in <m>S</m>. 
+</p>
 </definition>
 
 <p>For example, the MEX of <m>\{0,1,2,4,5,8,12\}</m> is <m>3</m>, sometimes written  <m>MEX(\{0,1,2,4,5,8,12\}) = 3</m>.
@@ -251,7 +257,7 @@ Let <m>\alpha = \{\alpha_1, \alpha_2, \dots , \alpha_k\}</m> be a position in an
 
 <question>
 <p>
- Prove the following (by induction on the number of layers in the game tree):
+ Prove the Sprague-Grundy Theorem (by induction on the number of layers in the game tree):
  [Note - You may assume the game is normal play if that makes analysis easier.]
 </p>
 </question>
@@ -260,13 +266,9 @@ Let <m>\alpha = \{\alpha_1, \alpha_2, \dots , \alpha_k\}</m> be a position in an
 Every position in an impartial game is equivalent to a nimber.
 </theorem>
 
-
-
-<p> Use the MEX theorem for the following question. </p>
-
 <question>
 <p>
- Find the nimber equivalent to each game of Pick Up Bricks on less than or equal to <m>8</m> bricks. Then conjecture a way to determine the nimber of a Pick Up Bricks game on <m>n</m> bricks.
+ Use the MEX Theorem to find the nimber equivalent to each game of Pick Up Bricks on less than or equal to <m>8</m> bricks. Then conjecture a way to determine the nimber of a Pick Up Bricks game on <m>n</m> bricks.
 </p>
 </question>
 
@@ -284,9 +286,11 @@ Every position in an impartial game is equivalent to a nimber.
 <p>
  Find a winning move in the following game if it exists, otherwise justify that there is no winning move: 
 </p>
-</question>
-(<m>2 \times 4</m> game of chomp) <m>+</m> (Pick up bricks on <m>7</m> bricks) <m>+</m> <m>*8</m>
 
+<p>
+(<m>2 \times 4</m> game of chomp) <m>+</m> (Pick up bricks on <m>7</m> bricks) <m>+</m> <m>*8</m>
+</p>
+</question>
 
 <question>
 <p>

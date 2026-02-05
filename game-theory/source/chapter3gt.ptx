@@ -200,7 +200,9 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
  Prove the following:
 </p>
 <theorem xml:id="Thm-Pis0">
-If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta</m> is the same type as <m>\alpha</m>.
+<p>
+    If <m>\beta</m> is type <m>P</m>, then <m>\alpha + \beta</m> is the same type as <m>\alpha</m>.
+</p>
 </theorem>
 </question>
 

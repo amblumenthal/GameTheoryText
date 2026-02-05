@@ -39,6 +39,10 @@
 <p>As such, let us abstract the game tree slightly further than where we ended in class. A <term>WLD Game Tree</term> condenses the information of our game tree by suppressing the game board. For example, the WLD Game tree for Tic is as follows: 
 </p>
 
+<figure xml:id="TicWLDGameTree">
+  <caption> The WLD Game Tree for Tic
+  </caption>
+  <image  xml:id="TicGameTree">
 <latex-image>
 \begin{tikzpicture}
 
@@ -69,6 +73,8 @@
     
 \end{tikzpicture}
 </latex-image>
+</image>
+</figure>
  
 
 <p> We can build on our tree by saying that sometimes (maybe always?) we know if a position is winning or not, and for whom! We will build on that in this assignment. </p>
@@ -121,6 +127,10 @@
 <p>You may be surprised to realize that you are able to identify who wins the following two games (despite not knowing the rules or what a position even looks like):
 </p>
 
+<figure xml:id="WLDGameTree2">
+  <caption> Game Tree for an unknown game
+  </caption>
+  <image  xml:id="gameTree2">
 <latex-image>
 \begin{tikzpicture}
     \node[circle, draw] at (-3, -.5) (g1) {-+};
@@ -132,6 +142,8 @@
     \draw[thick] (l)--(root)--(r);
 \end{tikzpicture}
 </latex-image>
+</image>
+</figure>
 
 
 <question>
@@ -144,6 +156,10 @@
 </p>
 </question>
 
+<figure xml:id="TicGameTreeAgain">
+  <caption> Tic Game Tree
+  </caption>
+  <image  xml:id="TicGameTreeAgain">
 <latex-image>
 \begin{tikzpicture}[scale = 2]
     \node[circle, draw] at (0,0) (root) {R};
@@ -173,7 +189,8 @@
     
 \end{tikzpicture}
 </latex-image>
- 
+</image>
+</figure>
 
 
 
