@@ -8,11 +8,6 @@
     </statement>
 </definition>
 
-<question>
-<p>
- Prove or disprove the following Claim:
-</p>
-</question>
 
 <claim>
 <p>
@@ -23,6 +18,12 @@
     <li> Type P. </li>
 </ol>
 </claim>
+
+<question>
+<p>
+ Prove or disprove the above Claim.
+</p>
+</question>
 
 <question>
 <p>
@@ -39,7 +40,7 @@
 <p>
  Let's build an intuition on Nim. Determine the type of the following Nim positions. Justify your answers.
 </p>
-</question>
+
 <ol>
     <li> One pile of <m>n</m> stones.  </li>
     <li> Two piles of <m>n</m> stones. </li>
@@ -49,7 +50,7 @@
     <li> One pile with <m>2</m> stones, one pile with <m>4</m> stones, and one pile with <m>6</m> stones. </li>
     
 </ol>
-
+</question>
 
 
 %THIS QUESTION WAS QUITE DIFFICULT: GIVE MORE GUIDANCE/SCAFFOLDING
@@ -57,20 +58,23 @@
 <p>
  Nim is a relatively general game. Can it be used to describe games that we have played before?
 </p>
-</question>
+
 <ol>
     <li> Convert a game of Pick Up Stones with <m>8</m> stones into a game of Nim. </li>
     <li> Convert a game of Pick Up Stones with <m>n</m> stones into a game of Nim. </li>
     <li> Convert a <m>1 \times 6</m> game of Chomp into a game of Nim. </li>
 </ol>
-
+</question>
 
  
 <p>We established that <m>P</m> positions act like <m>0</m> in some way. We want to establish, what do <m>P</m> positions look like in Nim. We will now define a new type of ``number'' to help us assess this.
 </p>
 
+
 <definition>
-A Nim pile with <m>n</m> stones is said to have <term>nimber</term> <m>*n</m> (read ``star n''). 
+    <statement>
+        A Nim pile with <m>n</m> stones is said to have <term>nimber</term> <m>*n</m> (read ``star n''). 
+    </statement>
 </definition>
 
 <question>
@@ -80,19 +84,16 @@ A Nim pile with <m>n</m> stones is said to have <term>nimber</term> <m>*n</m> (r
 </question>
 
 
-<definition>
-    <statement>
-        A Nim pile with <m>n</m> stones is said to have <term>nimber</term> <m>*n</m> (read ``star n''). 
-    </statement>
-</definition>
 
 <p>We would like to use nimbers to understand what a "balanced" game is.
 Let's take advantage of our idea of mirroring and split large groups into smaller groups that we can work with for balancing purposes.
 We introduce the following definition to decide how to break a game down into smaller pieces in a unique way.
 </p>
 
-<definition>[Binary Expansion]
-Let <m>n</m> be a nonnegative integer. The binary expansion of <m>n</m> is a representation of <m>n</m> as a sum of distinct powers of two.
+<definition>
+<p>
+    Let <m>n</m> be a nonnegative integer. The <term>binary expansion</term> of <m>n</m> is a representation of <m>n</m> as a sum of distinct powers of two.
+</p>
 </definition>
 
 <p>For example, the binary expansion of <m>45</m> is as follows:</p>
@@ -106,13 +107,13 @@ Let <m>n</m> be a nonnegative integer. The binary expansion of <m>n</m> is a rep
 <p>
  Find the binary expansions of the following numbers:
 </p>
-</question><ol>
+<ol>
     <li> <m>17</m>  </li>
     <li> <m>38</m> </li>
     <li> <m>528</m> </li>
     <li> <m>1823</m> </li>
 </ol>
-
+</question>
 
 
 
@@ -123,7 +124,7 @@ Let <m>n</m> be a nonnegative integer. The binary expansion of <m>n</m> is a rep
 </question>
 
 
-<definition>[Balanced]
+<definition>
 <p>
     A position in Nim <m>*a_1 + *a_2 + \dots + *a_n</m> is said to be <term>balanced</term> if for every power of <m>2</m>, the total number of subpiles of that size is even.
 </p>
@@ -196,9 +197,10 @@ First we will prove a useful fact for finding a move.
 </ol>
 </question>
 
-<p>We have:</p>
 <theorem>
-If <m>a_1,\dots , a_\ell</m> are nonnegative integers and <m>b = a_1 \oplus a_2 \oplus \dots \oplus a_\ell</m>, then <me>*a_1 + *a_2 + \dots + *a_\ell \equiv *b</me>
+<p>
+    If <m>a_1,\dots , a_\ell</m> are nonnegative integers and <m>b = a_1 \oplus a_2 \oplus \dots \oplus a_\ell</m>, then <me>*a_1 + *a_2 + \dots + *a_\ell \equiv *b</me>
+</p>
 </theorem>
 
 <p>With this theorem, we have now proven that every nim game is equivalent to some nimber! We will now go beyond to show that every impartial game is equivalent to some nimber.</p>
@@ -241,11 +243,13 @@ Finally, in the context of the theorem we just proved, how is MEX related to the
 %REFERENCED HOMEWORK PROBLEM: SCAFFOLD BETTER IN TEXTBOOK ALONE
 <question>
 <p>
- Discuss the downsides and accomplishments of following theorem for us. Prove it (remember problem 4b on the homework, then tell a player how to make a move). 
+ Discuss the downsides and value of following theorem for us. Prove it (remember problem 4b on the homework, then tell a player how to make a move). 
 </p>
 </question>
 <theorem>
-Let <m>\alpha = \{\alpha_1, \alpha_2, \dots , \alpha_k\}</m> be a position in an impartial game. Suppose that <m>\alpha_i \equiv *\alpha_i</m> for every <m>1 \leq i \leq k</m>. Then <m>\alpha \equiv *b</m> where <m>*b</m> is the MEX of the set <m>\{a_1,\dots,a_k\}</m>.
+<p>
+    Let <m>\alpha = \{\alpha_1, \alpha_2, \dots , \alpha_k\}</m> be a position in an impartial game. Suppose that <m>\alpha_i \equiv *\alpha_i</m> for every <m>1 \leq i \leq k</m>. Then <m>\alpha \equiv *b</m> where <m>*b</m> is the MEX of the set <m>\{a_1,\dots,a_k\}</m>.
+</p>
 </theorem>
 
 
@@ -257,13 +261,15 @@ Let <m>\alpha = \{\alpha_1, \alpha_2, \dots , \alpha_k\}</m> be a position in an
 
 <question>
 <p>
- Prove the Sprague-Grundy Theorem (by induction on the number of layers in the game tree):
+ Prove the Sprague-Grundy Theorem stated below (by induction on the number of layers in the game tree):
  [Note - You may assume the game is normal play if that makes analysis easier.]
 </p>
 </question>
 
-<theorem>[Sprague-Grundy]
-Every position in an impartial game is equivalent to a nimber.
+<theorem>
+<p> 
+    Every position in an impartial game is equivalent to a nimber.
+</p>
 </theorem>
 
 <question>
@@ -318,7 +324,9 @@ Every position in an impartial game is equivalent to a nimber.
 
 %SCAFFOLD BETTER BUILD UP TO THIS!
 <theorem>
-For every <m>m,n \geq 1</m> prove that the <m>m \times n</m> game of chop is equivalent to <m>*(m-1) + *(n-1)</m>.
+<p>
+    For every <m>m,n \geq 1</m> prove that the <m>m \times n</m> game of chop is equivalent to <m>*(m-1) + *(n-1)</m>.
+</p>
 </theorem>
 <question>
 <p>

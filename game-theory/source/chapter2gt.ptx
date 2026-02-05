@@ -4,12 +4,12 @@
 <definition>
     <statement>
         <p> A game is said to be a <term>Combinatorial Game</term> if it is a sequential two player game with </p>
-        <list type="bullet">
+        <ul>
             <li><p> A set of possible positions (sometimes called states of the game) </p></li>
             <li><p> A move rule indicating for each position, what positions can be moved to </p></li>
             <li><p> A win rule indicating a set of terminal positions where the game ends in which each terminal position has an associated outcome (which player wins) </p></li>
             <li><p> Both players have total knowledge of the position(s), move rule, and win rule during their turn </p></li>
-        </list>
+        </ul>
     </statement>
 </definition>
 

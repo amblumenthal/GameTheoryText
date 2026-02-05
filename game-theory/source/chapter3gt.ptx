@@ -222,6 +222,10 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 </p>
 </question>
 
+<figure xml:id="DomineeringvsPickUpBricks">
+  <caption> The WLD Game Tree for Tic
+  </caption>
+  <image  xml:id="aDomineeringBoard">
 <latex-image>
 \begin{tikzpicture}
 \draw[thick] (0,0) -- (0,2);
@@ -232,7 +236,8 @@ Use your representation to show a <m>4</m> by <m>3</m> position in cut-cake and 
 \draw[thick] (0,2) -- (1,2);
 \end{tikzpicture}
 </latex-image>
-
+</image>
+</figure>
 
 
 <question>
