@@ -159,7 +159,7 @@
 <figure xml:id="TicGameTreeAgain">
   <caption> Tic Game Tree
   </caption>
-  <image  xml:id="TicGameTreeAgain">
+  <image  xml:id="TicGameTree2">
 <latex-image>
 \begin{tikzpicture}[scale = 2]
     \node[circle, draw] at (0,0) (root) {R};
